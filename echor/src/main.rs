@@ -14,10 +14,11 @@ struct Args {
 
 fn main() {
     let args = Args::parse();
+    let output = vec![args.input].join(" ");
 
     if args.no_newline {
-        print!("{}", args.input);
+        print!("{}", output);
     } else {
-        println!("{}", args.input);
+        println!("{}", output);
     }
 }
