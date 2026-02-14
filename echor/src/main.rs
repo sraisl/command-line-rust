@@ -10,9 +10,6 @@ struct Args {
     
     #[arg(short = 'n', help = "Do not print the trailing newline")]
     no_newline: bool,
-
-
-    
 }
 
 fn main() {
